@@ -1,57 +1,274 @@
 /* ==========================================================================
    Your custom styles
    ========================================================================== */
-img {
-     width: 50%;
+
+/*header background*/
+header {
+  background: #3778C3 url('../img/hero.png') no-repeat;
+  background-size: cover;
 }
 
-@media ( min-with: 800px) {
- img {
-   width: 100%;
- }
-}
-
-
-/*Logo/header text box*/
+/*Logo/header-text box*/
 section.headline {
-  background: url('file:///Users/johnmoriarty/program/portfolio/portfolionew/img/hero.png') no-repeat;
-  background-color: #3778C3;
-  height: 14.375em;
+  padding: 5rem 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  align-items: center;
   justify-content: center;
 }
 
-/*Header Text box*/
-.headertext {
+/*"John Moriarty"*/
+.headertext h1{
+  font-size: 36px;
+  letter-spacing: -3%;
   font-family: "muli", sans-serif;
-  font-style: "light";
+  font-weight: 300;
   color: #ffffff;
   line-height: .25rem;
-  padding-top: 4.5rem;
-  padding-left: 3.25rem;
+}
+
+@media ( min-width: 700px) {
+.headertext h1{
+  font-size: 64px;
+  }
+}
+
+/*"UX design and fine..."*/
+.headertext h4{
+  font-size: 18px;
+  font-family: "muli", sans-serif;
+  font-style: "light";
+  font-weight: 300;
+  color: #ffffff;
+  line-height: .25rem;
 }
 
 /*Logo*/
 .logo{
-  position: absolute;
   width: 3.125rem;
   height:4.375rem;
-  padding-right: 19rem;
-  padding-top: 4.5rem;
+  padding-right: 1rem;
 }
 
-.header {
-  width: 100%;
-  height: 2.68rem;
-  position: absolute;
-  flex-direction: row;
+/*overall navbar box*/
+.navbar {
   display: flex;
   justify-content: flex-end;
-  background-color: #538CCF;
+  align-items: center;
+  width: 100%;
+  height: 2.68rem;
+  background-color: rgba(83, 140, 207, 0.8);
 }
+
+/*overall navbar-text style reset and placement*/
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-right: 2%;
+}
+
+/*navbar list item alignment and spacing*/
+.navbar ul li {
+  display: block;
+  margin-left: 2rem;
+}
+
+/*navbar font*/
+.navbar ul li a{
+  font-size: 18px;
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* overall greeting box */
+.greeting {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+@media ( min-width: 700px) {
+  .greeting{
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+/* portrait version switch */
+.desktop {
+  display:none;
+}
+
+@media (min-width: 700px){
+  .mobile{
+    display:none;
+  }
+  .desktop{
+    display:block;
+  }
+}
+
+/* portrait sizing/styling */
+.greeting img {
+  width: 45%;
+
+}
+
+@media ( min-width: 700px) {
+  .greeting img {
+      width: 60%;
+      padding-top: 5%;
+  }
+}
+
+/* greeting text box */
+.hey {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+}
+
+@media ( min-width: 700px) {
+  .hey {
+    width: 40%;
+    margin-right: 0;
+  }
+}
+
+/*"Hey" text styling*/
+.greeting h2 {
+  font-size: 1.5em;
+  font-family: "Playfair Display";
+  color: #0F2A6E;
+  text-decoration: none;
+}
+
+@media ( min-width: 700px) {
+  .greeting h2 {
+    font-size: 36px;
+  }
+}
+
+/*greeting body text styling*/
+.greeting p{
+  font-size: 1em;
+  font-family: "muli";
+  font-weight: 300;
+  color: #0F2A6E;
+  text-decoration: none;
+  line-height: 1.25em;
+}
+
+@media ( min-width: 700px) {
+  .greeting p{
+    font-size: 18px;
+  }
+}
+
+/*overall selected work box*/
+.selected-work {
+  box-sizing: border-box;
+  display: block;
+
+}
+
+@media ( min-width: 700px) {
+.selected-work {
+  box-sizing: border-box;
+  justify-content: center;
+
+  }
+}
+
+/*"selected works" styling"*/
+.selected-work h2 {
+    font-size: 1.5em;
+    font-family: "Playfair Display";
+    color: #0F2A6E;
+    text-decoration: none;
+    padding-left: 5%;
+  }
+}
+
+@media ( min-width: 700px) {
+  .selected-work h2 {
+    font-size: 36px;
+  }
+}
+
+/*overall case studys container*/
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media ( min-width: 700px) {
+.container {
+  justify-content: space-around;
+  }
+}
+
+/*Case Study title styling*/
+.container h3{
+  font-family: "Muli";
+  font-weight: bold;
+  color: #0F2A6E;
+  font-size: 18px;
+}
+
+/*Case Study description styling*/
+.container p{
+  font-family: "Muli";
+  font-weight: normal;
+  color: #0F2A6E;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/*Mine case study box*/
+  .mine {
+  width: 75%;
+}
+
+@media ( min-width: 700px) {
+  .mine {
+    width: 45%;
+  }
+}
+
+/*Mine image*/
+.mine img{
+  width: 100%;
+}
+
+
+
+/*Busybus case study box*/
+.bus {
+  width: 75%;
+}
+
+@media ( min-width: 700px) {
+  .bus {
+  width: 45%;
+  }
+}
+
+.bus img{
+  width: 100%;
+}
+
 
 section.footer {
 
