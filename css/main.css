@@ -38,7 +38,6 @@ section.headline {
 .headertext h4{
   font-size: 18px;
   font-family: "muli", sans-serif;
-  font-style: "light";
   font-weight: 300;
   color: #ffffff;
   line-height: .25rem;
@@ -46,25 +45,28 @@ section.headline {
 
 /*Logo*/
 .logo{
-  width: 3.125rem;
-  height:4.375rem;
+  width: 8%;
+  height: 8%;
   padding-right: 1rem;
 }
 
 /*overall navbar box*/
 .navbar {
   display: flex;
+  position: relative;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 2.68rem;
-  background-color: rgba(83, 140, 207, 0.8);
+  background-color: rgba(55, 120, 195, .4);
+  /*mix-blend-mode: multiply;*/
 }
 
-/*overall navbar-text style reset and placement*/
+/*overall navbar-text style 'li' reset and placement*/
 .navbar ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 0;
   margin: 0;
   margin-right: 2%;
@@ -87,18 +89,16 @@ section.headline {
 
 /* overall greeting box */
 .greeting {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 @media ( min-width: 700px) {
-  .greeting{
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
+.greeting{
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
   }
 }
 
@@ -108,58 +108,62 @@ section.headline {
 }
 
 @media (min-width: 700px){
-  .mobile{
-    display:none;
+.mobile{
+  display:none;
   }
-  .desktop{
-    display:block;
+.desktop{
+  display:block;
   }
 }
 
 /* portrait sizing/styling */
 .greeting img {
   width: 45%;
-
+  box-shadow: 6px 6px 22px rgba(55, 120, 195, 0.4);
+  border-radius: 0px 0px 150px 0px;
 }
 
 @media ( min-width: 700px) {
-  .greeting img {
-      width: 60%;
-      padding-top: 5%;
+.greeting img {
+  max-width: 70%;
+  padding-top: 5%;
+  box-shadow: none;
+  border-radius: 0px;
   }
 }
 
 /* greeting text box */
 .hey {
-  width: 60%;
+  width: 50%;
   justify-content: center;
   align-items: center;
+  margin-left: 5%;
   margin-right: 2%;
 }
 
 @media ( min-width: 700px) {
-  .hey {
-    width: 40%;
-    margin-right: 0;
+.hey {
+  width: 50%;
+  margin-right: 0;
   }
 }
 
 /*"Hey" text styling*/
-.greeting h2 {
-  font-size: 1.5em;
+.hey h2 {
+  font-size: 24px;
   font-family: "Playfair Display";
   color: #0F2A6E;
   text-decoration: none;
 }
 
 @media ( min-width: 700px) {
-  .greeting h2 {
-    font-size: 36px;
+.hey h2 {
+  font-size: 36px;
   }
 }
 
 /*greeting body text styling*/
-.greeting p{
+.hey p{
   font-size: 1em;
   font-family: "muli";
   font-weight: 300;
@@ -169,8 +173,8 @@ section.headline {
 }
 
 @media ( min-width: 700px) {
-  .greeting p{
-    font-size: 18px;
+.hey p{
+  font-size: 18px;
   }
 }
 
@@ -178,30 +182,31 @@ section.headline {
 .selected-work {
   box-sizing: border-box;
   display: block;
-
+  margin-top: 10%;
+  margin-bottom: 8%;
 }
 
 @media ( min-width: 700px) {
 .selected-work {
+  margin-top: 0;
   box-sizing: border-box;
   justify-content: center;
-
   }
 }
 
 /*"selected works" styling"*/
 .selected-work h2 {
-    font-size: 1.5em;
-    font-family: "Playfair Display";
-    color: #0F2A6E;
-    text-decoration: none;
-    padding-left: 5%;
-  }
+  font-size: 24px;
+  font-family: "Playfair Display";
+  color: #0F2A6E;
+  text-decoration: none;
+  margin-left: 10%;
+ }
 }
 
 @media ( min-width: 700px) {
-  .selected-work h2 {
-    font-size: 36px;
+.selected-work h2 {
+  font-size: 36px;
   }
 }
 
@@ -215,7 +220,9 @@ section.headline {
 
 @media ( min-width: 700px) {
 .container {
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
   }
 }
 
@@ -237,13 +244,15 @@ section.headline {
 }
 
 /*Mine case study box*/
-  .mine {
+.mine {
   width: 75%;
 }
 
 @media ( min-width: 700px) {
-  .mine {
-    width: 45%;
+.mine {
+  width: 45%;
+  max-width: 450px;
+  max-height: 100%;
   }
 }
 
@@ -251,8 +260,6 @@ section.headline {
 .mine img{
   width: 100%;
 }
-
-
 
 /*Busybus case study box*/
 .bus {
@@ -262,20 +269,50 @@ section.headline {
 @media ( min-width: 700px) {
   .bus {
   width: 45%;
+  max-width: 450px;
+  max-height: 100%;
   }
 }
 
+/*Busybus image*/
 .bus img{
   width: 100%;
 }
 
-
-section.footer {
-
+/*overall footer box*/
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 2.68rem;
+  background-color: rgba(55, 120, 195, 1);
 
 }
 
+/*overall footer-text style 'li' reset and placement*/
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 2%;
+}
 
+/*footer list item alignment and spacing*/
+.footer ul li {
+  display: block;
+  margin-left: 2rem;
+}
+
+/*footer font*/
+.footer ul li a{
+  font-size: 18px;
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
 
 
 /* ==========================================================================
