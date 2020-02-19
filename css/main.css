@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Your custom styles
-   ========================================================================== */
+   Main Page styles
+========================================================================== */
 
 /*header background*/
 header {
@@ -102,7 +102,7 @@ section.headline {
   }
 }
 
-/* portrait version switch */
+/* desktop/mobile image version switch ================*/
 .desktop {
   display:none;
 }
@@ -313,6 +313,80 @@ section.headline {
   font-weight: 300;
   text-decoration: none;
   color: #ffffff;
+}
+
+/* ==========================================================================
+   About page classes
+========================================================================== */
+
+/*overall content frame*/
+.about-frame {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media ( min-width: 800px) {
+.about-frame {
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  justify-content: space-between;
+  }
+}
+
+/* desktop/mobile image version switch */
+.about-desktop {
+  display:none;
+}
+
+@media (min-width: 800px){
+.about-mobile{
+  display:none;
+  }
+.about-desktop{
+  display:block;
+  }
+}
+
+/*image styling*/
+@media ( min-width: 800px) {
+.about-frame img{
+
+}
+}
+
+/*body text box*/
+@media ( min-width: 800px) {
+.desktop-text {
+  padding-top: 12%;
+  padding-left: 2%;
+  padding-right: 2%;
+  }
+}
+
+/*body text styling*/
+.about-frame p {
+  text-align: left;
+  font-family: "Muli";
+  font-weight: normal;
+  color: #0F2A6E;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@media ( min-width: 800px) {
+.about-pics1 {
+}
+
+@media ( min-width: 800px) {
+.about-pics2 {
+  padding-top: 325px;
+}
+
+
+
+
 
 
 /* ==========================================================================
