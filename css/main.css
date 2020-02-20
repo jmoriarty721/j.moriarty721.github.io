@@ -234,6 +234,27 @@ section.headline {
   font-size: 18px;
 }
 
+/*"View Case Study*/
+.container a{
+  font-family: "Muli";
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/*box for "View Case Study"*/
+.work-button {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  background-color: rgba(55, 120, 195, 1);
+
+}
+
 /*Case Study description styling*/
 .container p{
   font-family: "Muli";
@@ -246,6 +267,7 @@ section.headline {
 /*Mine case study box*/
 .mine {
   width: 75%;
+  position: relative;
 }
 
 @media ( min-width: 700px) {
@@ -263,11 +285,14 @@ section.headline {
 
 /*Busybus case study box*/
 .bus {
+  padding-top: 7%;
+  position: relative;
   width: 75%;
 }
 
 @media ( min-width: 700px) {
   .bus {
+  padding-top: 0;
   width: 45%;
   max-width: 450px;
   max-height: 100%;
@@ -326,7 +351,7 @@ section.headline {
   margin-right: 5%;
 }
 
-@media ( min-width: 800px) {
+@media ( min-width: 900px) {
 .about-frame {
   margin-left: 1%;
   margin-right: 1%;
@@ -340,7 +365,7 @@ section.headline {
   display:none;
 }
 
-@media (min-width: 800px){
+@media (min-width: 900px){
 .about-mobile{
   display:none;
   }
@@ -350,14 +375,19 @@ section.headline {
 }
 
 /*image styling*/
-@media ( min-width: 800px) {
 .about-frame img{
+  padding: 1%;
+}
 
+@media ( min-width: 900px) {
+.about-frame img{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 }
 
 /*body text box*/
-@media ( min-width: 800px) {
+@media ( min-width: 900px) {
 .desktop-text {
   padding-top: 12%;
   padding-left: 2%;
@@ -375,11 +405,11 @@ section.headline {
   line-height: 150%;
 }
 
-@media ( min-width: 800px) {
+@media ( min-width: 900px) {
 .about-pics1 {
 }
 
-@media ( min-width: 800px) {
+@media ( min-width: 900px) {
 .about-pics2 {
   padding-top: 325px;
 }
