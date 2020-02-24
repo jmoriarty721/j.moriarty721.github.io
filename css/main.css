@@ -406,16 +406,422 @@ section.headline {
 @media ( min-width: 900px) {
 .about-pics1 {
 }
-
+}
 @media ( min-width: 900px) {
 .about-pics2 {
   padding-top: 325px;
 }
+}
 
+/* ==========================================================================
+   "Mine" Case study page classes
+========================================================================== */
 
+/*overall case study content box*/
+.casestudy{
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
+@media ( min-width: 700px) {
+.casestudy{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+}
 
+/*overall case study title styling*/
+.casestudy h2{
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
 
+@media ( min-width: 700px) {
+.casestudy h2{
+  font-size: 24px;
+}
+}
+
+/*overall case study image styling
+.casestudy img{
+  width: 75%;
+}
+*/
+
+/*overall case study body text styling*/
+.casestudy p{
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 18px */
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 5%;
+}
+
+@media ( min-width: 700px) {
+.casestudy p{
+  line-height: 154%;
+}
+}
+
+/*overall case study button styling*/
+.button{
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 13px;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1.75%;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  color: #0075FF;
+}
+
+@media ( min-width: 700px) {
+.button{
+  font-size: 18px;
+}
+}
+
+/*overall space between sections*/
+.name{
+  margin-bottom: 10%;
+}
+
+@media ( min-width: 700px) {
+  .name{
+    margin-bottom: 5%;
+  }
+}
+
+/*overall title section*/
+.title{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media ( min-width: 700px) {
+  .title{
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+/*title image*/
+.title img{
+  width:95%;
+  padding-left: 8%;
+}
+
+@media ( min-width: 700px) {
+.title img{
+    order: 2;
+    width: 70%;
+    padding-left: 0;
+  }
+}
+
+/*overall title text box*/
+@media ( min-width: 700px) {
+ .titletext{
+  order: 1;
+  margin-top: 30%;
+  width: 30%;
+  }
+}
+
+/*"MINE*/
+.title h1{
+  padding-top: 0;
+  margin: 0;
+  font-family: "gill sans";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #000000;
+}
+
+@media ( min-width: 700px) {
+.title h1{
+  font-size: 64px;
+  display: flex;
+}
+}
+
+/*"a minimal cloud.."*/
+.title p{
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  width: 100%;
+  margin-top:6%;
+  margin-bottom: 6%;
+}
+
+/*dashboard screen*/
+.intro img{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/*overall ul reset*/
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*survey ul box*/
+.survey ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.survey li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.survey h6 {
+  display: flex;
+  align-items: center;
+  width: 144px;
+  height: 49px;
+  background: #FFF8EE;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.survey span{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  height: 49px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
+}
+
+/*comp analysis ul box*/
+.competitive-analysis ul{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  /* or 18px */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  }
+
+/*comp analysis text padding*/
+.competitive-analysis li{
+  padding-top: 5%;
+}
+
+/*comp analysis logo box*/
+.comp-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media ( min-width: 700px) {
+.comp-logos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+}
+
+/*comp analysis logos*/
+.competitive-analysis img{
+  width: 20%;
+  display: inline-flex;
+  align-items: baseline;
+  text-align: center;
+}
+
+/*overall personas block*/
+.persona-block{
+  padding-top: 5%;
+  padding-left: 8%;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*box for persona portraits and titles*/
+.persona-pics{
+  display: inline-flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+/*persona portraits*/
+.persona-pics img{
+  width: 89px 89px;
+}
+
+/*persona portrait title styling*/
+.personas h4{
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-indent: 10px;
+  color: #000000;
+  width: 100%;
+}
+
+/*list under portrait box*/
+.personas ul{
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  /* or 18px */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  }
+
+/*persona list text padding*/
+.personas li{
+  padding-top: 3%;
+}
+
+/*user stories orange list box*/
+.user-stories ul{
+  width: 70%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  /* or 18px */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+  background: #FFF8EE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  }
+
+/*user stories orange box text padding*/
+.user-stories li{
+  padding-top: 3%;
+}
+
+/*user flow image*/
+.user-flows img{
+  padding-top: 15%;
+  width: 100%;
+}
+
+/*wireframe images*/
+.wireframes img{
+  padding-top: 10%;
+  width: 100%;
+}
+
+/*testing section box for button spacing*/
+.button-stack{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*testing section button styling*/
+.testing a{
+  margin-right: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*testing orange list box*/
+.testing ul{
+  margin: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  /* or 18px */
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #FFF8EE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  list-style-type: disc;
+ }
+
+/*user stories orange box text padding*/
+.testing li{
+ padding-top: 3%;
+ }
+
+.branding img{
+  width: 100%;
+}
+
+.mockups img{
+  width: 100%;
+}
+
+.conclusion img{
+  width: 100%;
+}
 
 /* ==========================================================================
    Helper classes (optional)
