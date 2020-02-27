@@ -25,7 +25,6 @@ section.headline {
 /*"John Moriarty"*/
 .headertext h1{
   font-size: 36px;
-  letter-spacing: -3%;
   font-family: "muli", sans-serif;
   font-weight: 300;
   color: #ffffff;
@@ -777,11 +776,12 @@ padding: 5%;
   flex-wrap: wrap;
 }
 
-@media ( min-width: 700px) {
+@media ( min-width: 860px) {
   .persona-block{
     width:100%;
     padding-left:0;
     justify-content: space-around;
+    flex-wrap:nowrap;
 }
 }
 
@@ -801,7 +801,8 @@ padding: 5%;
 
 /*persona portraits*/
 .persona-pics img{
-  width: 89px 89px;
+  width: 89px;
+  height: 89px;
 }
 
 /*persona portrait title styling*/
