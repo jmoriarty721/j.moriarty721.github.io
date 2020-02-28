@@ -533,7 +533,7 @@ section.headline {
 
 @media ( min-width: 700px) {
   .name{
-    margin-bottom: 5%;
+    margin-bottom: 15%;
   }
 }
 
@@ -687,6 +687,8 @@ ul {
   border-radius: 100%;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 700px){
@@ -699,21 +701,24 @@ padding: 5%;
 .survey h6 {
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 12%;
   padding-top:1%;
   padding-bottom:1%;
   margin: 0;
+  margin-left: -2rem;
   font-size: 14px;
   font-weight: 400;
-  width: 250px;
+  width: 200px;
   height: 50px;
   background: #FFF8EE;
   border-radius: 0px 15px 15px 0px;
+  position: relative;
+  z-index: 1
 }
 
 @media (min-width: 700px){
   .survey h6{
-  padding-left: 2%;
+  padding-left: 15%;
   width: 275px;
   height: 60px;
   font-size: 16px;
@@ -791,11 +796,13 @@ padding: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
   align-items: center;
+  width: 100%;
 }
 
 @media ( min-width: 700px) {
   .persona-pics{
     padding-bottom: 0;
+    width: 33.333%;
 }
 }
 
@@ -852,11 +859,8 @@ padding: 5%;
 .user-stories ul{
   width: 60%;
   min-width: 100px;
-  margin-top: 10%;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin: 15%;
+  padding: 5%;
   font-family: "Muli";
   font-style: normal;
   font-weight: normal;
@@ -869,8 +873,6 @@ padding: 5%;
   background: #FFF8EE;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-
-  padding-inline-start: 0;
   }
 
 @media ( min-width: 700px) {
@@ -884,6 +886,7 @@ padding: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding-top: 3%;
 }
 
