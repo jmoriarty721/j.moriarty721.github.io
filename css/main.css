@@ -119,7 +119,7 @@ section.headline {
 .navbar ul li a{
   font-size: 18px;
   font-family: "muli", sans-serif;
-  font-weight: 300;
+  font-weight:  500;
   text-decoration: none;
   color: #ffffff;
 }
@@ -473,12 +473,6 @@ section.headline {
 }
 }
 
-/*overall case study image styling
-.casestudy img{
-  width: 75%;
-}
-*/
-
 /*overall case study body text styling*/
 .casestudy p{
   font-family: "Muli";
@@ -693,7 +687,7 @@ ul {
 
 @media (min-width: 700px){
 .survey span{
-padding: 5%;
+  padding: 5%;
 }
 }
 
@@ -808,8 +802,13 @@ padding: 5%;
 
 /*persona portraits*/
 .persona-pics img{
-  width: 89px;
-  height: 89px;
+  width: 40%;
+}
+
+@media ( min-width: 800px) {
+  .persona-pics img{
+    width: 80%;
+  }
 }
 
 /*persona portrait title styling*/
