@@ -611,7 +611,9 @@ section.headline {
 /*dashboard screen*/
 .intro img{
   display: flex;
-  width: 100%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: center;
   text-align: center;
 }
@@ -892,13 +894,18 @@ ul {
 /*user flow image*/
 .user-flows img{
   padding-top: 15%;
-  width: 100%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*wireframe images*/
 .wireframes img{
   padding-top: 10%;
-  width: 100%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+
 }
 
 /*testing and mockups section box for button spacing=========*/
@@ -957,9 +964,11 @@ ul {
 
  /* branding desktop image version  */
  .branding .desktop {
-   width: 100%;
+   width: 80%;
+   padding-left: 10%;
+   padding-right: 10%;
    margin-top: 7%;
- }
+}
 
  /*mockup section button styling*/
  .mockups a{
@@ -975,7 +984,9 @@ ul {
 }
 
 .mockups img{
-  width: 100%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 5%;
 }
 
