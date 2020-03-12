@@ -1,9 +1,29 @@
 /* ==========================================================================
-   Main Page styles
+   Universal styles
 ========================================================================== */
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 a {
   text-decoration: none;
+}
+
+strong{
+  font-size: 1.75rem;
+  font-family: "muli", sans-serif;
+  font-weight:  500;
+  text-decoration: none;
+  color: #0076EC;
+}
+
+@media ( min-width: 1200px) {
+  strong{
+    font-size: 2.25rem;
+  }
 }
 
 /*header background*/
@@ -14,7 +34,7 @@ header {
 
 /*Logo/header-text box*/
 section.headline {
-  padding: 5rem 0;
+  padding: .25rem 0;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +44,7 @@ section.headline {
 
 /*"John Moriarty"*/
 .headertext h1{
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: "muli", sans-serif;
   font-weight: 300;
   color: #ffffff;
@@ -33,32 +53,50 @@ section.headline {
 
 @media ( min-width: 700px) {
 .headertext h1{
-  font-size: 64px;
+  font-size: 4rem;
+  }
+}
+
+@media ( min-width: 1200px) {
+.headertext h1{
+  font-size: 6rem;
   }
 }
 
 /*Earlier/smaller phones*/
 @media ( max-width: 450px) {
   .headertext h1{
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: .25em;
     text-align: center;
     }
   }
 
-/*"UX design and fine..."*/
+/*"UX design in Asheville"*/
 .headertext h4{
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "muli", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: #ffffff;
   line-height: .25rem;
+}
+
+@media ( min-width: 700px) {
+.headertext h4{
+  font-size: 1.5rem;
+}
+}
+
+@media ( min-width: 1200px) {
+.headertext h4{
+  font-size: 2rem;
+}
 }
 
 /*Earlier/smaller phones*/
 @media ( max-width: 450px) {
   .headertext h4{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1em;
     text-align: center;
   }
@@ -66,9 +104,9 @@ section.headline {
 
 /*Logo*/
 .logo{
-  width: 8%;
-  height: 8%;
-  padding-right: 1rem;
+  width: 6%;
+  height: 6%;
+  padding: 1rem;
 }
 
 /*Earlier/smaller phones*/
@@ -87,7 +125,7 @@ section.headline {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 2.68rem;
+  height: 3rem;
   background-color: rgba(55, 120, 195, .4);
   /*mix-blend-mode: multiply;*/
 }
@@ -117,26 +155,11 @@ section.headline {
 
 /*navbar font*/
 .navbar ul li a{
-  font-size: 18px;
+  font-size: 1.25rem;
   font-family: "muli", sans-serif;
   font-weight:  500;
   text-decoration: none;
   color: #ffffff;
-}
-
-/* overall greeting box */
-.greeting {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@media ( min-width: 700px) {
-.greeting{
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
-  }
 }
 
 /* desktop/mobile image version switch ===========================*/
@@ -153,6 +176,100 @@ section.headline {
   }
 }
 
+/*overall footer box*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.68rem;
+  background-color: rgba(55, 120, 195, 1);
+}
+
+.footer p{
+  font-size: 14px;
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 2%;
+}
+
+/*overall footer-text style 'li' reset and placement*/
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 2%;
+}
+
+/*footer list item alignment and spacing*/
+.footer ul li {
+  display: block;
+  margin-left: 2rem;
+}
+
+/*footer font*/
+.footer ul li a{
+  font-size: 18px;
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#myBtn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: "muli";
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(55, 120, 195, 1);
+  border-radius: 10px;
+  padding:2%;
+  font-size: 18px; /* Increase font size */
+  color:  #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+#myBtn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*overall ul reset*/
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding:0;
+}
+
+
+/* ==========================================================================
+   Main Page styles
+========================================================================== */
+
+/* overall greeting box */
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+
+@media ( min-width: 700px) {
+.greeting{
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+}
+
 /* portrait sizing/styling */
 .greeting img {
   width: 45%;
@@ -163,7 +280,7 @@ section.headline {
 @media ( min-width: 700px) {
 .greeting img {
   width: 50%;
-  padding-top: 5%;
+  padding-top: 2%;
   box-shadow: none;
   border-radius: 0px;
   }
@@ -186,17 +303,18 @@ section.headline {
   }
 }
 
-/*"Hey" text styling*/
+/*"Hey" text styling
 .hey h2 {
   font-size: 24px;
   font-family: "Playfair Display";
   color: #0F2A6E;
   text-decoration: none;
 }
+*/
 
 /*greeting body text styling*/
 .hey p{
-  font-size: 1em;
+  font-size: 1rem;
   font-family: "muli";
   font-weight: 300;
   color: #0F2A6E;
@@ -204,9 +322,15 @@ section.headline {
   line-height: 1.25em;
 }
 
-@media ( min-width: 700px) {
+@media ( min-width: 380px) {
 .hey p{
-  font-size: 18px;
+  font-size: 1.25rem;
+  }
+}
+
+@media ( min-width: 1000px) {
+.hey p{
+  font-size: 1.5rem;
   }
 }
 
@@ -228,8 +352,9 @@ section.headline {
 
 /*"selected works" styling*/
 .selected-work h2 {
-  font-size: 24px;
-  font-family: "Playfair Display";
+  font-size: 3rem;
+  font-family: "Muli";
+  font-weight: 500;
   color: #0F2A6E;
   text-decoration: none;
   margin-left: 10%;
@@ -254,10 +379,11 @@ section.headline {
 
 /*Case Study title styling*/
 .container h3{
-  font-family: "Muli";
-  font-weight: bold;
-  color: #0F2A6E;
-  font-size: 18px;
+  font-size: 2.25rem;
+  font-family: "muli", sans-serif;
+  font-weight:  500;
+  text-decoration: none;
+  color: #0076EC;
 }
 
 /*box for "View Case Study"*/
@@ -274,21 +400,29 @@ section.headline {
 /*"View Case Study"*/
 .container a{
   font-family: "Muli";
-  font-weight: normal;
+  font-weight: 500;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 /*Case Study description styling*/
 .container p{
   font-family: "Muli";
-  font-weight: normal;
+  font-weight: 300;
   color: #0F2A6E;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 1.5rem;
+  line-height: 1.25em;
   max-height: 6em;
 }
+
+/*
+@media ( min-width: 700px) {
+.container p{
+  font-size: 1.5rem;
+  }
+}
+*/
 
 /*Mine case study box*/
 .mine {
@@ -327,59 +461,50 @@ section.headline {
   width: 100%;
 }
 
-/*overall footer box*/
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 2.68rem;
-  background-color: rgba(55, 120, 195, 1);
-}
-
-/*overall footer-text style 'li' reset and placement*/
-.footer ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-right: 2%;
-}
-
-/*footer list item alignment and spacing*/
-.footer ul li {
-  display: block;
-  margin-left: 2rem;
-}
-
-/*footer font*/
-.footer ul li a{
-  font-size: 18px;
-  font-family: "muli", sans-serif;
-  font-weight: 300;
-  text-decoration: none;
-  color: #ffffff;
-}
-
 /* ==========================================================================
    About page classes
 ========================================================================== */
+
+/*"Quick Story.."*/
+.desktop-text h2{
+font-size: 3rem;
+font-family: "Muli";
+font-weight: 500;
+color:#0076EC;
+text-decoration: none;
+display: flex;
+margin:0;
+padding-top: 3%;
+}
 
 /*overall content frame*/
 .about-frame {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+  }
+
+@media ( min-width: 800px) {
+  .about-frame {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media ( min-width: 1000px) {
 .about-frame {
-  margin-left: 1%;
-  margin-right: 1%;
   display: flex;
   justify-content: space-between;
   }
+}
+
+@media ( min-width: 1200px) {
+.about-frame {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
 }
 
 /* desktop/mobile image version switch */
@@ -387,33 +512,30 @@ section.headline {
   display:none;
 }
 
-@media (min-width: 1000px){
-.about-mobile{
-  display:none;
-  }
-.about-desktop{
-  display:block;
-  }
-}
 
 /*image styling*/
 .about-frame img{
   padding: 1%;
-  max-width: 100%;
+  width: 80%;
+}
+
+@media ( min-width: 700px) {
+.about-frame img{
+align-items: center;
+width: 45%;
+}
 }
 
 @media ( min-width: 1000px) {
 .about-frame img{
-  padding-top: 0;
-  padding-bottom: 0;
-  max-width: none;
+align-items: center;
+width: 45%;
 }
 }
 
 /*body text box*/
 @media ( min-width: 1000px) {
 .desktop-text {
-  padding-top: 12%;
   padding-left: 2%;
   padding-right: 2%;
   }
@@ -425,19 +547,56 @@ section.headline {
   font-family: "Muli";
   font-weight: normal;
   color: #0F2A6E;
-  font-size: 16px;
+  font-size:1rem;
   line-height: 150%;
 }
 
+@media ( min-width: 700px) {
+.about-frame p {
+  align-items: center;
+  padding-top: 3%;
+  font-size:1.25rem;
+}
+}
+
+@media ( min-width: 1200px) {
+.about-frame p {
+  align-items: center;
+  padding-top: 3%;
+  font-size:1.5rem;
+}
+}
+
+/*Left picture column styling*/
 @media ( min-width: 1000px) {
 .about-pics1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 }
+
+@media ( min-width: 1200px) {
+.about-pics1 {
+  padding: 1%;
+}
+}
+
+/*Right picture column styling*/
 @media ( min-width: 1000px) {
 .about-pics2 {
-  padding-top: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 }
+
+@media ( min-width: 1200px) {
+.about-pics2 {
+  padding: 1%;
+}
+}
+
 
 /* ==========================================================================
    "Mine" Case study page classes
@@ -447,12 +606,13 @@ section.headline {
 .casestudy{
   margin-left: 3%;
   margin-right: 3%;
+  max-width: 800px;
 }
 
-@media ( min-width: 700px) {
+@media ( min-width: 850px) {
 .casestudy{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 
@@ -461,7 +621,7 @@ section.headline {
   font-family: "Playfair";
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 16px;
   display: flex;
   align-items: center;
@@ -469,7 +629,8 @@ section.headline {
 
 @media ( min-width: 700px) {
 .casestudy h2{
-  font-size: 24px;
+  font-size: 3rem;
+  letter-spacing: .2rem;
 }
 }
 
@@ -478,40 +639,60 @@ section.headline {
   font-family: "Muli";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.15rem;
   line-height: 130%;
   /* or 18px */
   display: flex;
   align-items: center;
   color: #000000;
   margin-bottom: 5%;
+  max-width: 800px;
 }
 
 @media ( min-width: 700px) {
 .casestudy p{
   line-height: 154%;
+  font-size: 1.25rem;
 }
 }
+
+@media ( min-width: 1200px) {
+.casestudy p{
+  line-height: 154%;
+  font-size: 1.5rem;
+}
+}
+
 
 /*overall case study button styling========================*/
 .button{
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 300px;
+  height: 50px;
   background: #FFFFFF;
   border: 1px solid #DADADA;
   box-sizing: border-box;
   border-radius: 13px;
   text-decoration: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 1.75%;
   font-family: Arial;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.25rem;
   align-items: center;
   text-align: center;
   justify-content: center;
   color: #0075FF;
+}
+
+@media ( max-width: 550px) {
+  .button{
+    font-size: 1rem;
+  }
+}
+
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media ( min-width: 700px) {
@@ -560,6 +741,13 @@ section.headline {
   }
 }
 
+@media ( min-width: 700px) {
+.title img{
+    order: 2;
+    width: 60%;
+  }
+}
+
 /*overall title text box*/
 @media ( min-width: 700px) {
  .titletext{
@@ -569,12 +757,12 @@ section.headline {
   }
 }
 
- .titletext a{
-  width:100%;
-  padding: 4.75%;
- }
-
-
+@media ( min-width: 1200px) {
+.titletext{
+  width: 40%;
+  padding-left: 0;
+}
+}
 /*"MINE*/
 .title h1{
   padding-top: 0;
@@ -583,13 +771,13 @@ section.headline {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 2rem;
   color: #000000;
 }
 
 @media ( min-width: 700px) {
 .title h1{
-  font-size: 64px;
+  font-size: 4rem;
   display: flex;
 }
 }
@@ -599,7 +787,7 @@ section.headline {
   font-family: "Muli";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 110%;
   letter-spacing: 0.04em;
   color: #000000;
@@ -608,7 +796,27 @@ section.headline {
   margin-bottom: 6%;
 }
 
+@media ( min-width: 700px) {
+  .title p{
+    font-size: 1rem;
+  }
+}
+
+  @media ( min-width: 1200px) {
+    .title p{
+      font-size: 1.25rem;
+    }
+}
+
+.intro img{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
 /*dashboard screen*/
+@media ( min-width: 700px) {
 .intro img{
   display: flex;
   width: 80%;
@@ -617,17 +825,11 @@ section.headline {
   justify-content: center;
   text-align: center;
 }
-
-/*overall ul reset*/
-ul {
-  text-decoration: none;
-  list-style-type: none;
 }
 
 /*survey ul box*/
 .survey ul {
   text-decoration: none;
-  margin-left: 8%;
   padding: 0;
   list-style-type: none;
   margin-top: 10%;
@@ -660,6 +862,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding:0;
   margin-top: 5%;
 }
@@ -672,15 +875,18 @@ ul {
 }
 
 /*stat percentage styling*/
-.survey span{
+.survey h5{
   display: flex;
+  margin-top:auto;
+  margin-bottom: auto;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 3%;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-radius: 50%;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
   position: relative;
@@ -688,8 +894,12 @@ ul {
 }
 
 @media (min-width: 700px){
-.survey span{
-  padding: 5%;
+.survey h5{
+  margin:0;
+  padding:0;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
 }
 }
 
@@ -697,13 +907,14 @@ ul {
 .survey h6 {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   padding-left: 12%;
   padding-top:1%;
   padding-bottom:1%;
   margin: 0;
   margin-left: -2rem;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 300;
   width: 200px;
   height: 50px;
   background: #FFF8EE;
@@ -722,141 +933,308 @@ ul {
 }
 }
 
-/*comp analysis ul box*/
+/*overall box for biz info*/
+.comp-logos{
+  display: block;
+  padding-top: 5%;
+
+}
+
+@media (min-width: 700px){
+  .comp-logos{
+    display: flex;
+  }
+}
+
+/*logo imgs*/
+.comp-logos img {
+  width:30%;
+  padding:2%;
+  align-items: center;
+}
+
+@media (min-width: 700px){
+.comp-logos img {
+  width: 125px;
+  height: 100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+}
+
+.biz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/*overall list styling*/
 .competitive-analysis ul{
-  width: 90%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
   font-family: "Muli";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 110%;
-  /* or 18px */
-  align-items: center;
+  font-size: 1.35rem;
+  padding-bottom: 2%;
+}
+
+@media (min-width: 700px){
+.competitive-analysis ul{
+}
+}
+
+.comp-logos li{
+  text-decoration: none;
+  font-size: 1.5rem;
   text-align: center;
-  justify-content: center;
-  color: #000000;
-  }
-
-/*comp analysis text padding*/
-.competitive-analysis li{
-  padding-top: 5%;
 }
 
-/*comp analysis logo box*/
-.comp-logos {
-  display: flex;
-  justify-content: space-around;
+@media (min-width: 700px){
+.comp-logos li{
+  font-size: 1.25rem;
+  margin-top:2%;;
+  padding:0;
 }
-
-@media ( min-width: 700px) {
-.comp-logos {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-}
-
-/*comp analysis logos*/
-.competitive-analysis img{
-  width: 20%;
-  display: inline-flex;
-  align-items: baseline;
-  text-align: center;
 }
 
 /*overall personas block*/
 .persona-block{
-  padding-top: 5%;
-  padding-left: 8%;
-  width: 75%;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 5%;
+
 }
 
 @media ( min-width: 860px) {
   .persona-block{
-    width:100%;
-    padding-left:0;
-    justify-content: space-around;
-    flex-wrap:nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
 }
 }
 
-/*box for persona portraits and titles*/
 .persona-pics{
-  display: inline-flex;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  align-items: center;
-  width: 100%;
+  display: block;
+  align-items: flex-start;
+  margin-top: 10%;
 }
 
-@media ( min-width: 700px) {
-  .persona-pics{
-    padding-bottom: 0;
-    width: 33.333%;
+@media ( min-width: 860px) {
+.persona-pics{
+  width:33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 5%;
 }
 }
 
 /*persona portraits*/
 .persona-pics img{
-  width: 40%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  height:170px;
 }
 
-@media ( min-width: 800px) {
+@media ( min-width: 860px) {
   .persona-pics img{
-    width: 80%;
+    width: 170px;
+    height:170px;
   }
 }
 
 /*persona portrait title styling*/
 .personas h4{
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
+  display: flex;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: 1.75rem;
   line-height: 24px;
-  align-items: center;
-  text-indent: 10px;
+  justify-content: center;
   color: #000000;
-  width: 100%;
 }
 
-/*list under portrait box*/
-.personas ul{
-  width: 90%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 110%;
-  /* or 18px */
+@media (min-width: 860px){
+.personas h4{
+  font-size: 1.5rem;
+}
+}
+
+/*overall list styling*/
+.persona-pics ul{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 860px){
+.persona-pics ul{
+}
+}
+
+.persona-pics li{
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "muli";
+  font-weight: 300;
+}
+
+@media (min-width: 860px){
+.persona-pics li{
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-top:2%;
+  padding:0;
+}
+}
+
+.goals {
+  background-color: #C7FFC6;
+  padding: 5%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+@media (min-width: 860px){
+.goals {
+  height: 200px;
+}
+}
+
+.motiv {
+    background-color: #EBD7FA;
+    padding: 5%;
+}
+
+@media (min-width: 860px){
+.motiv {
+  height: 450px;
+}
+}
+
+.frus {
+    background-color: #FFE1E1;
+    padding: 5%;
+    border-radius: 0px 0px 30px 30px;
+}
+
+@media (min-width: 860px){
+.frus {
+  height: 200px;
+}
+}
+
+/* ul box*/
+.user-stories ul {
+  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+
+@media (min-width: 900px){
+.user-stories ul {
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+  margin-left:0;
+}
+}
+/*stories li for tasks/priorities*/
+.user-stories li {
+  display: flex;
+  align-items: center;
+  padding:0;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+/*stories boxes for flex styling*/
+@media (min-width: 900px){
+.user-stories div {
+padding-right:2%;
+margin-top: auto;
+margin-bottom: auto;
+}
+}
+
+/*stories tasks styling*/
+.user-stories span{
+  display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #000000;
-  }
-
-@media ( min-width: 700px) {
-  .personas ul{
-    font-size: 20px;
-  }
+  padding:1%;
+  font-family: "Muli";
+  height: 60px;
+  width: 175px;
+  font-size: 1.25rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
-/*persona list text padding*/
-.personas li{
-  padding-top: 3%;
+@media (min-width: 900px){
+.user-stories span{
+  height: 80px;
+  width: 150px;
+}
 }
 
-/*user stories orange list box*/
+/*stories priorities styling*/
+.user-stories h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: 150px;
+  height: 50px;
+  border-radius: 0px 15px 15px 0px;
+  position: relative;
+  z-index: 1
+}
+
+@media (min-width: 900px){
+  .user-stories h6{
+  width: 125px;
+  height: 60px;
+}
+}
+
+.high{
+  background: #d9ead3;
+}
+
+.medium{
+  background: #fff2cc;
+}
+
+.low{
+  background: #fce5cd;
+}
+
+/*user stories orange list box
 .user-stories ul{
   width: 60%;
   min-width: 100px;
@@ -867,7 +1245,60 @@ ul {
   font-weight: normal;
   font-size: 16px;
   line-height: 110%;
-  /* or 18px */
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #FFF8EE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  }
+
+
+@media ( min-width: 700px) {
+.user-stories ul{
+  font-size: 20px;
+  }
+}
+
+/*user stories orange box text padding
+.user-stories li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+}
+*/
+
+/*user flow image*/
+.user-flows img{
+  padding-top: 5%;
+  width: 100%;
+}
+
+/*Tasks"*/
+.user-flows h3{
+    padding-left: 5%;
+    font-family: "muli";
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+@media ( min-width: 700px) {
+  .user-flows h3{
+    font-size: 1.5rem;
+  }
+}
+
+/*user flows orange list box*/
+.user-flows ul{
+  width: 60%;
+  min-width: 100px;
+  margin: auto;
+  padding: 5%;
+  font-family: "Muli";
+  font-weight: 300;
+  font-size: 1rem;
   align-items: center;
   justify-content: center;
   color: #000000;
@@ -877,104 +1308,102 @@ ul {
   }
 
 @media ( min-width: 700px) {
-.user-stories ul{
+  .user-flows ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+}
+
+@media ( min-width: 700px) {
+.user-flows ul{
+  display: flex;
   font-size: 20px;
   }
 }
 
-/*user stories orange box text padding*/
-.user-stories li{
+@media ( min-width: 700px) {
+.user-flows div{
+  width: 250px;
+  padding: 5%;
+}
+}
+
+/*user flows orange box text padding*/
+.user-flows li{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   padding-top: 3%;
 }
 
-/*user flow image*/
-.user-flows img{
-  padding-top: 15%;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
+/*wireframe overall box*/
+.wireframe-box {
+  display: block;
 }
-
-/*wireframe images*/
-.wireframes img{
-  padding-top: 10%;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-
-}
-
-/*testing and mockups section box for button spacing=========*/
-.button-stack{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*testing section button styling*/
-.testing a{
-  margin-right: 50%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-
-/*testing orange list box*/
-.testing ul{
-  margin: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 110%;
-  /* or 18px */
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-  background: #FFF8EE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  list-style-type: disc;
- }
 
  @media ( min-width: 700px) {
-   .testing ul{
-     margin-right:20%;
-     margin-left: 20%;
-   }
- }
+.wireframe-box {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}
 
-/*testing orange box text padding*/
-.testing li{
- padding-top: 3%;
- }
+/*wireframe sketch img*/
+.sketch{
+  padding-top: 5%;
+  width: 100%;
+  margin:0;
+  padding-bottom: 5%;
+}
 
- /* branding mobile image version */
+/*wireframe figma frame img*/
+.frame{
+  width: 100%;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.05);
+  margin-bottom: 4%;
+}
+
+ @media ( min-width: 700px) {
+.frame{
+  padding-left: 0;
+  padding-right: 0;
+  width: 45%;
+  margin-bottom: 0;
+}
+}
+
+ /* branding mobile image version
  .branding .mobile {
    width: 50%;
    margin-top: 7%;
    margin-left: 25%;
    margin-right: 25%;
  }
+*/
 
  /* branding desktop image version  */
  .branding .desktop {
-   width: 80%;
-   padding-left: 10%;
-   padding-right: 10%;
+   display: flex;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
    margin-top: 7%;
+   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.05);
+}
+
+@media ( min-width: 700px) {
+.branding .desktop {
+  display: flex;
+  width: 70%;
+}
 }
 
  /*mockup section button styling*/
  .mockups a{
-   margin-right: 50%;
    margin-top: 2%;
-   margin-bottom: 2%;
  }
 
  @media ( min-width: 700px) {
@@ -990,15 +1419,210 @@ ul {
   margin-top: 5%;
 }
 
+/*testing and mockups section box for button spacing=========*/
+.stack{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+ @media ( min-width: 700px) {
+.test-review{
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+}
+
+.pref{
+  margin-top:5%;
+}
+
+ @media ( min-width: 700px) {
+.pref{
+  margin-top:2%;
+}
+}
+
+.loss{
+    background-color: #FFE1E1;
+    padding: 2%;
+}
+
+.win{
+    background-color: #B4E2A3;
+    padding: 2%;
+}
+
+.pref img{
+  display: flex;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ @media ( min-width: 700px) {
+   .pref img{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width:90%;
+}
+}
+
+.testing h3{
+  display: flex;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: 1.35rem;
+  justify-content: center;
+  color: #000000;
+}
+
+
+/*testing section button styling*/
+.testing a{
+  margin-bottom: 2%;
+}
+
+/*testing orange list box*/
+.testing ul{
+  margin: 5%;
+  padding: 5%;
+  padding-left: 10%;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 110%;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #FFF8EE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  list-style-type: disc;
+ }
+
+ @media ( min-width: 700px) {
+   .testing ul{
+     margin-right:15%;
+     margin-left: 15%;
+   }
+ }
+
+/*testing orange box text padding*/
+.testing li{
+ padding-top: 3%;
+ text-align: left;
+ }
+
+/*conclusion uls*/
+.conclusion ul{
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+/*conclusion li styling*/
+.conclusion li{
+  padding-top: 2%;
+  font-weight: lighter;
+  line-height: 1.35;
+}
+
+/*conclusion rendering*/
 .conclusion img{
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+/*no need for margin with footer*/
 .conclusion{
   margin-bottom: 0;
 }
+
+/* ==========================================================================
+   Contact styling
+   ========================================================================== */
+
+.contact-box{
+  display: flex;
+  background-color: rgba(55, 120, 195, 1);
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 10px 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+@media ( min-width: 1000px) {
+.contact-box{
+  width:60%;
+}
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  width:75%;
+  background-color:
+}
+
+.contact{
+  display: flex;
+  margin:5%;
+}
+
+@media ( min-width: 1200px) {
+.contact{
+
+}
+}
+
+.contact-title{
+    font-family: "muli";
+    font-weight: 500;
+    color: #ffffff;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+.text-box {
+    width: 95%;
+}
+
+.contact-button{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width:150px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 13px;
+  text-decoration: none;
+  padding: 1.75%;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 1.25rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #0075FF;
+}
+
+.contact-button:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 /* ==========================================================================
    Helper classes (optional)
@@ -1011,7 +1635,7 @@ ul {
 
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
