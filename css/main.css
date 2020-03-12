@@ -1549,6 +1549,19 @@ margin-bottom: auto;
    Contact styling
    ========================================================================== */
 
+   .contact-header {
+     font-size: 3rem;
+     font-family: "Muli";
+     font-weight: 500;
+     color: #0F2A6E;
+     text-decoration: none;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: center;
+     }
+
+
 .contact-box{
   display: flex;
   background-color: rgba(55, 120, 195, 1);
@@ -1557,7 +1570,7 @@ margin-bottom: auto;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 15%;
 }
 
