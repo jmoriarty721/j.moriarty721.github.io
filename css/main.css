@@ -299,7 +299,7 @@ ul {
 .hey {
   width: 50%;
   margin-right: 0;
-  margin-left: 2%;
+  margin-left: 0;
   }
 }
 
@@ -357,8 +357,11 @@ ul {
   font-weight: 500;
   color: #0F2A6E;
   text-decoration: none;
-  margin-left: 10%;
- }
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  }
 
 
 /*overall case studies container*/
@@ -372,8 +375,8 @@ ul {
 @media ( min-width: 700px) {
 .container {
   justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   }
 }
 
