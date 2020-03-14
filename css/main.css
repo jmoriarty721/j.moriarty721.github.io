@@ -10,10 +10,102 @@ main {
 
 a {
   text-decoration: none;
+  font-family: "Muli";
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-strong{
+
+/*overall ul reset*/
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding:0;
+}
+
+li{
+  font-size: 1rem;
+  font-family: "muli";
+  font-weight: 300;
+  color: #0F2A6E;
+}
+
+/*base style [n]*/
+p {
+  font-size: 1rem;
+  font-family: "muli";
+  font-weight: 300;
+  color: #0F2A6E;
+  line-height:1.2 ;
+  text-decoration: none;
+}
+h3{
+  font-size: 1.25rem;
+  font-family: "muli", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0F2A6E;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: "Muli";
+  font-weight: 400;
+  color: #0F2A6E;
+}
+h1{
+  font-size: 2.15rem;
+  font-family: "Muli";
+  font-weight: 400;
+  color: #0F2A6E;
+}
+
+/*[n+.15]*/
+@media ( min-width: 380px) {
+p {
+  font-size: 1.15rem;
+  }
+li{
+  font-size: 1.15rem;
+}
+a {
+  font-size: 1.15rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h2 {
   font-size: 1.75rem;
+}
+h1{
+  font-size: 2.3rem;
+}
+}
+
+/*[n+.25]*/
+@media ( min-width: 1200px) {
+  p {
+    font-size: 1.25rem;
+    }
+  li {
+    font-size: 1.25rem;
+    }
+  a {
+    font-size: 1.25rem;
+    }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.85rem;
+  }
+  h1{
+    font-size: 2.35rem;
+  }
+  }
+
+
+strong{
+  font-size: 1.25rem;
   font-family: "muli", sans-serif;
   font-weight:  500;
   text-decoration: none;
@@ -22,7 +114,7 @@ strong{
 
 @media ( min-width: 1200px) {
   strong{
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -51,26 +143,27 @@ section.headline {
   line-height: .25rem;
 }
 
+/*Earlier/smaller phones*/
+@media ( max-width: 450px) {
+  .headertext h1{
+    font-size: 2rem;
+    line-height: .25em;
+    text-align: center;
+    }
+  }
+
 @media ( min-width: 700px) {
 .headertext h1{
-  font-size: 4rem;
+  font-size: 3rem;
   }
 }
 
 @media ( min-width: 1200px) {
 .headertext h1{
-  font-size: 6rem;
+  font-size: 4rem;
   }
 }
 
-/*Earlier/smaller phones*/
-@media ( max-width: 450px) {
-  .headertext h1{
-    font-size: 1.5rem;
-    line-height: .25em;
-    text-align: center;
-    }
-  }
 
 /*"UX design in Asheville"*/
 .headertext h4{
@@ -81,25 +174,26 @@ section.headline {
   line-height: .25rem;
 }
 
+/*Earlier/smaller phones*/
+@media ( max-width: 450px) {
+  .headertext h4{
+    font-size: .9rem;
+    line-height: 1em;
+    text-align: center;
+  }
+}
+
+
 @media ( min-width: 700px) {
 .headertext h4{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 }
 
 @media ( min-width: 1200px) {
 .headertext h4{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-}
-
-/*Earlier/smaller phones*/
-@media ( max-width: 450px) {
-  .headertext h4{
-    font-size: 1rem;
-    line-height: 1em;
-    text-align: center;
-  }
 }
 
 /*Logo*/
@@ -112,6 +206,9 @@ section.headline {
 /*Earlier/smaller phones*/
 @media ( max-width: 450px) {
 .logo{
+    width: 8%;
+    height: 8%;
+    padding: 0;
     margin-left: 25%;
     margin-right: 25%;
     justify-content: center;
@@ -193,6 +290,14 @@ section.headline {
   text-decoration: none;
   color: #ffffff;
   padding-left: 2%;
+  width:100%;
+}
+
+@media ( max-width: 550px) {
+.footer p{
+  font-size: 12px;
+
+}
 }
 
 /*overall footer-text style 'li' reset and placement*/
@@ -241,14 +346,6 @@ section.headline {
 #myBtn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/*overall ul reset*/
-ul {
-  text-decoration: none;
-  list-style-type: none;
-  padding:0;
-}
-
 
 /* ==========================================================================
    Main Page styles
@@ -312,27 +409,6 @@ ul {
 }
 */
 
-/*greeting body text styling*/
-.hey p{
-  font-size: 1rem;
-  font-family: "muli";
-  font-weight: 300;
-  color: #0F2A6E;
-  text-decoration: none;
-  line-height: 1.25em;
-}
-
-@media ( min-width: 380px) {
-.hey p{
-  font-size: 1.25rem;
-  }
-}
-
-@media ( min-width: 1000px) {
-.hey p{
-  font-size: 1.5rem;
-  }
-}
 
 /*overall selected work box*/
 .selected-work {
@@ -351,12 +427,7 @@ ul {
 }
 
 /*"selected works" styling*/
-.selected-work h2 {
-  font-size: 3rem;
-  font-family: "Muli";
-  font-weight: 500;
-  color: #0F2A6E;
-  text-decoration: none;
+.selected-work h1 {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -380,14 +451,6 @@ ul {
   }
 }
 
-/*Case Study title styling*/
-.container h3{
-  font-size: 2.25rem;
-  font-family: "muli", sans-serif;
-  font-weight:  500;
-  text-decoration: none;
-  color: #0076EC;
-}
 
 /*box for "View Case Study"*/
 .work-button {
@@ -402,30 +465,9 @@ ul {
 
 /*"View Case Study"*/
 .container a{
-  font-family: "Muli";
-  font-weight: 500;
   color: #ffffff;
-  font-size: 1.5rem;
   text-decoration: none;
 }
-
-/*Case Study description styling*/
-.container p{
-  font-family: "Muli";
-  font-weight: 300;
-  color: #0F2A6E;
-  font-size: 1.5rem;
-  line-height: 1.25em;
-  max-height: 6em;
-}
-
-/*
-@media ( min-width: 700px) {
-.container p{
-  font-size: 1.5rem;
-  }
-}
-*/
 
 /*Mine case study box*/
 .mine {
@@ -470,14 +512,10 @@ ul {
 
 /*"Quick Story.."*/
 .desktop-text h2{
-font-size: 3rem;
-font-family: "Muli";
-font-weight: 500;
-color:#0076EC;
 text-decoration: none;
 display: flex;
 margin:0;
-padding-top: 3%;
+padding-top: 10%;
 }
 
 /*overall content frame*/
@@ -533,6 +571,7 @@ width: 45%;
 .about-frame img{
 align-items: center;
 width: 45%;
+
 }
 }
 
@@ -547,10 +586,6 @@ width: 45%;
 /*body text styling*/
 .about-frame p {
   text-align: left;
-  font-family: "Muli";
-  font-weight: normal;
-  color: #0F2A6E;
-  font-size:1rem;
   line-height: 150%;
 }
 
@@ -558,7 +593,6 @@ width: 45%;
 .about-frame p {
   align-items: center;
   padding-top: 3%;
-  font-size:1.25rem;
 }
 }
 
@@ -566,11 +600,10 @@ width: 45%;
 .about-frame p {
   align-items: center;
   padding-top: 3%;
-  font-size:1.5rem;
 }
 }
 
-/*Left picture column styling*/
+/*Left picture column styling
 @media ( min-width: 1000px) {
 .about-pics1 {
   display: flex;
@@ -619,53 +652,10 @@ width: 45%;
 }
 }
 
-/*overall case study title styling*/
-.casestudy h2{
-  font-family: "Playfair";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
+/*overall space between sections*/
+.name{
+  margin-bottom: 10%;
 }
-
-@media ( min-width: 700px) {
-.casestudy h2{
-  font-size: 3rem;
-  letter-spacing: .2rem;
-}
-}
-
-/*overall case study body text styling*/
-.casestudy p{
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.15rem;
-  line-height: 130%;
-  /* or 18px */
-  display: flex;
-  align-items: center;
-  color: #000000;
-  margin-bottom: 5%;
-  max-width: 800px;
-}
-
-@media ( min-width: 700px) {
-.casestudy p{
-  line-height: 154%;
-  font-size: 1.25rem;
-}
-}
-
-@media ( min-width: 1200px) {
-.casestudy p{
-  line-height: 154%;
-  font-size: 1.5rem;
-}
-}
-
 
 /*overall case study button styling========================*/
 .button{
@@ -680,7 +670,6 @@ width: 45%;
   text-decoration: none;
   padding: 1.75%;
   font-family: Arial;
-  font-weight: bold;
   font-size: 1.25rem;
   align-items: center;
   text-align: center;
@@ -704,16 +693,6 @@ width: 45%;
 }
 }
 
-/*overall space between sections*/
-.name{
-  margin-bottom: 10%;
-}
-
-@media ( min-width: 700px) {
-  .name{
-    margin-bottom: 15%;
-  }
-}
 
 /*overall title section*/
 .title{
@@ -756,7 +735,7 @@ width: 45%;
  .titletext{
   order: 1;
   margin-top: 30%;
-  width: 30%;
+  width: 40%;
   }
 }
 
@@ -766,50 +745,19 @@ width: 45%;
   padding-left: 0;
 }
 }
+
 /*"MINE*/
 .title h1{
   padding-top: 0;
   margin: 0;
-  font-family: "gill sans";
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2rem;
-  color: #000000;
 }
 
 @media ( min-width: 700px) {
 .title h1{
-  font-size: 4rem;
   display: flex;
 }
 }
 
-/*"a minimal cloud.."*/
-.title p{
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 110%;
-  letter-spacing: 0.04em;
-  color: #000000;
-  width: 100%;
-  margin-top:6%;
-  margin-bottom: 6%;
-}
-
-@media ( min-width: 700px) {
-  .title p{
-    font-size: 1rem;
-  }
-}
-
-  @media ( min-width: 1200px) {
-    .title p{
-      font-size: 1.25rem;
-    }
-}
 
 .intro img{
   display: flex;
@@ -878,7 +826,7 @@ width: 45%;
 }
 
 /*stat percentage styling*/
-.survey h5{
+.survey h3{
   display: flex;
   margin-top:auto;
   margin-bottom: auto;
@@ -887,8 +835,6 @@ width: 45%;
   justify-content: center;
   height: 75px;
   width: 75px;
-  font-size: 1.25rem;
-  font-weight: 400;
   border-radius: 50%;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
@@ -897,7 +843,7 @@ width: 45%;
 }
 
 @media (min-width: 700px){
-.survey h5{
+.survey h3{
   margin:0;
   padding:0;
   border-radius: 50%;
@@ -907,7 +853,7 @@ width: 45%;
 }
 
 /*stats explanations styling*/
-.survey h6 {
+.stats p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -916,8 +862,6 @@ width: 45%;
   padding-bottom:1%;
   margin: 0;
   margin-left: -2rem;
-  font-size: 1rem;
-  font-weight: 300;
   width: 200px;
   height: 50px;
   background: #FFF8EE;
@@ -927,12 +871,10 @@ width: 45%;
 }
 
 @media (min-width: 700px){
-  .survey h6{
+  .stats p{
   padding-left: 15%;
   width: 275px;
   height: 60px;
-  font-size: 16px;
-  font-weight: 400;
 }
 }
 
@@ -982,10 +924,6 @@ width: 45%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.35rem;
   padding-bottom: 2%;
 }
 
@@ -996,13 +934,11 @@ width: 45%;
 
 .comp-logos li{
   text-decoration: none;
-  font-size: 1.5rem;
   text-align: center;
 }
 
 @media (min-width: 700px){
 .comp-logos li{
-  font-size: 1.25rem;
   margin-top:2%;;
   padding:0;
 }
@@ -1012,7 +948,6 @@ width: 45%;
 .persona-block{
   display: flex;
   flex-wrap: wrap;
-  padding-top: 5%;
 
 }
 
@@ -1060,20 +995,9 @@ width: 45%;
 }
 
 /*persona portrait title styling*/
-.personas h4{
+.personas h3{
   display: flex;
-  font-family: "muli";
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 24px;
   justify-content: center;
-  color: #000000;
-}
-
-@media (min-width: 860px){
-.personas h4{
-  font-size: 1.5rem;
-}
 }
 
 /*overall list styling*/
@@ -1091,17 +1015,13 @@ width: 45%;
 
 .persona-pics li{
   text-decoration: none;
-  font-size: 1.5rem;
   text-align: center;
-  font-family: "muli";
-  font-weight: 300;
 }
 
 @media (min-width: 860px){
 .persona-pics li{
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
   margin-top:2%;
   padding:0;
 }
@@ -1126,7 +1046,13 @@ width: 45%;
 
 @media (min-width: 860px){
 .motiv {
-  height: 450px;
+  height: 380px;
+}
+}
+
+@media (min-width: 1200px){
+.motiv {
+  height: 430px;
 }
 }
 
@@ -1184,10 +1110,8 @@ margin-bottom: auto;
   text-align: center;
   justify-content: center;
   padding:1%;
-  font-family: "Muli";
   height: 60px;
   width: 175px;
-  font-size: 1.25rem;
   background: #FFFFFF;
   box-shadow: 0px 0px 8px rgba(220, 180, 134, 0.5);
   position: relative;
@@ -1202,7 +1126,7 @@ margin-bottom: auto;
 }
 
 /*stories priorities styling*/
-.user-stories h6 {
+.user-stories h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1210,7 +1134,6 @@ margin-bottom: auto;
   padding-bottom:1%;
   margin: 0;
   font-size: 1.25rem;
-  font-weight: 400;
   width: 150px;
   height: 50px;
   border-radius: 0px 15px 15px 0px;
@@ -1219,7 +1142,7 @@ margin-bottom: auto;
 }
 
 @media (min-width: 900px){
-  .user-stories h6{
+  .user-stories h3{
   width: 125px;
   height: 60px;
 }
@@ -1237,41 +1160,6 @@ margin-bottom: auto;
   background: #fce5cd;
 }
 
-/*user stories orange list box
-.user-stories ul{
-  width: 60%;
-  min-width: 100px;
-  margin: 15%;
-  padding: 5%;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 110%;
-  align-items: center;
-  justify-content: center;
-  color: #000000;
-  background: #FFF8EE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  }
-
-
-@media ( min-width: 700px) {
-.user-stories ul{
-  font-size: 20px;
-  }
-}
-
-/*user stories orange box text padding
-.user-stories li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 3%;
-}
-*/
 
 /*user flow image*/
 .user-flows img{
@@ -1419,7 +1307,7 @@ margin-bottom: auto;
   width: 80%;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 5%;
+  margin-top: 2.5%;
 }
 
 /*testing and mockups section box for button spacing=========*/
@@ -1437,6 +1325,7 @@ margin-bottom: auto;
 }
 }
 
+/*overall testing img block*/
 .pref{
   margin-top:5%;
 }
@@ -1447,6 +1336,7 @@ margin-bottom: auto;
 }
 }
 
+/*diff testing img background colors*/
 .loss{
     background-color: #FFE1E1;
     padding: 2%;
@@ -1457,6 +1347,7 @@ margin-bottom: auto;
     padding: 2%;
 }
 
+/*testing img*/
 .pref img{
   display: flex;
   width:80%;
@@ -1473,19 +1364,17 @@ margin-bottom: auto;
 }
 }
 
+/* testing subheaders*/
 .testing h3{
   display: flex;
-  font-family: "muli";
-  font-weight: 400;
-  font-size: 1.35rem;
   justify-content: center;
-  color: #000000;
 }
 
 
-/*testing section button styling*/
+/*testing section button stack styling*/
 .testing a{
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 /*testing orange list box*/
@@ -1493,14 +1382,8 @@ margin-bottom: auto;
   margin: 5%;
   padding: 5%;
   padding-left: 10%;
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 110%;
   align-items: center;
   justify-content: center;
-  color: #000000;
   background: #FFF8EE;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -1516,7 +1399,8 @@ margin-bottom: auto;
 
 /*testing orange box text padding*/
 .testing li{
- padding-top: 3%;
+ padding-top: 1.5%;
+ padding-bottom: 1.5%;
  text-align: left;
  }
 
@@ -1524,12 +1408,11 @@ margin-bottom: auto;
 .conclusion ul{
   padding-left: 5%;
   padding-right: 10%;
+  list-style-type: disc;
 }
 
 /*conclusion li styling*/
 .conclusion li{
-  padding-top: 2%;
-  font-weight: lighter;
   line-height: 1.35;
 }
 
@@ -1550,10 +1433,6 @@ margin-bottom: auto;
    ========================================================================== */
 
    .contact-header {
-     font-size: 3rem;
-     font-family: "Muli";
-     font-weight: 500;
-     color: #0F2A6E;
      text-decoration: none;
      margin-left: auto;
      margin-right: auto;
@@ -1564,7 +1443,7 @@ margin-bottom: auto;
 .contact-box{
   display: flex;
   background-color: rgba(55, 120, 195, 1);
-  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 7px 7px rgba(55, 120, 195, 0.25);
   border-radius: 10px 10px 10px 10px;
   width: 80%;
   margin-left: auto;
@@ -1614,7 +1493,7 @@ form {
     width: 95%;
 }
 
-.contact-button{
+.contact-box .button{
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -1625,13 +1504,9 @@ form {
   border-radius: 13px;
   text-decoration: none;
   padding: 1.75%;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 1.25rem;
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #0075FF;
 }
 
 .contact-button:hover{
