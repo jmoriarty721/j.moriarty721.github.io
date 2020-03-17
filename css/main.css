@@ -1464,6 +1464,7 @@ form {
 .contact{
   display: flex;
   margin:5%;
+  flex-direction: column;
 }
 
 @media ( min-width: 1200px) {
