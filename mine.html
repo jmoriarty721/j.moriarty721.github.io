@@ -20,37 +20,48 @@
       <![endif]-->
 
       <header>
-        <a href="index.html">
+        <!-- Old Hero
         <section class="headline">
           <img class="logo" src="img/logo.svg" alt="Logo">
           <div class="headertext">
             <h1>John Moriarty</h1>
             <h4>UX Design in Asheville, NC</h4>
           </div>
-        </section>
-      </a>
+        </section>-->
 
         <nav class="navbar">
-          <ul>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://drive.google.com/file/d/1PLL-qg-o_en3b-WzMNrPBehJCYh_3QUD/view?usp=sharing" target="_blank">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+          <div class="navname">
+              <a href="index.html"><h1>John Moriarty</h1></a>
+          </div>
+          <div class="navelements">
+              <ul>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <!--<li><a href="https://drive.google.com/file/d/1PLL-qg-o_en3b-WzMNrPBehJCYh_3QUD/view?usp=sharing"  target="_blank">Resume</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
         </nav>
 
       </header>
 
       <main class="casestudy">
 
-        <section class="name title">
-        <img src="img/mine/mine_hero.png" alt="Renders on iphone and desktop">
+        <section class="title">
           <div class="titletext">
-            <h1>Mine</h1>
+            <img src="img/mine/mine_logo.png" class="titlelogo" alt="Renders on desktop">
+            <h1>MINE</h1>
             <p>a cloud storage platform that prioritizes organization through simplicity</p>
-            <a href="https://www.figma.com/proto/BdpNgBrPQp9OlQumXM9GAm/Hi-Fi-prototypes-v2?node-id=1%3A2711&viewport=-640%2C345%2C0.125&scaling=contain"  target="_blank" class="button">View Prototype</a>
           </div>
+          <img src="img/mine/mine_hero.png" class="titlehero" alt="Renders on desktop">
         </section>
+
+        <a href="https://www.figma.com/proto/BdpNgBrPQp9OlQumXM9GAm/Hi-Fi-prototypes-v2?node-id=1%3A2711&viewport=-640%2C345%2C0.125&scaling=contain"  target="_blank" class="button mineintro">View Prototype</a>
+        <div class="minerole">
+          <h2>Roles</h2>
+          <p>Research | UX/UI Design | Branding | Prototyping | Testing</p>
+        </div>
 
         <section class="name intro">
           <h2>Problem</h2>
@@ -189,7 +200,7 @@
               </ul>
             <ul class="motiv">
               <li><strong>Motivations</strong></li>
-              <li>Claire works at a coffee shop while finishing her last year of school. She likes to decompress by scrolling through imgur for funny memes. She saves the ones that really get her, but never really looks at them again. She uses a burner email for more free storage after having used up the free storage for her main account.</li>
+              <li>Claire works at a coffee shop while finishing her last year of school. She likes to decompress by scrolling through imgur for funny memes. She saves the ones that really get her, but never really looks at them again.</li>
             </ul>
             <ul class="frus">
               <li><strong>Frustrations</strong></li>
@@ -325,16 +336,25 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
       </main>
 
+      <div class="case-nav next">
+      <a href="loupe.html"><i class="fas fa-long-arrow-alt-left"></i></a>
+      <a href="loupe.html"><h3>Next Case Study</h3></a>
+    </div>
+
       <footer>
         <nav class="footer">
-        <p> ©2020 Designed and Developed by John Moriarty</P>
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/jmoriarty721"  target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/johnmoriarty-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          </ul>
-        </nav>
-      </footer>
+          <div class="license">
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/johnmoriarty-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/jmoriarty721"  target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+
+          <p>Designed and Developed by John Moriarty 2020</P>
+
+                        <img src="img/loupe/logo-footer.png" alt="logo">
+                      </nav>
+                    </footer>
 
 
               <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->

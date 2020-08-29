@@ -20,78 +20,89 @@
         <![endif]-->
 
         <header>
-          <a href="index.html">
+          <!-- Old Hero
           <section class="headline">
             <img class="logo" src="img/logo.svg" alt="Logo">
             <div class="headertext">
               <h1>John Moriarty</h1>
               <h4>UX Design in Asheville, NC</h4>
             </div>
-          </section>
-        </a>
+          </section>-->
 
           <nav class="navbar">
-            <ul>
-              <li><a href="#work">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="https://drive.google.com/file/d/1PLL-qg-o_en3b-WzMNrPBehJCYh_3QUD/view?usp=sharing" target="_blank"> Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="navname">
+                <a href="index.html"><h1>John Moriarty</h1></a>
+            </div>
+            <div class="navelements">
+                <ul>
+                  <li><a href="index.html#work">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <!--<li><a href="https://drive.google.com/file/d/1PLL-qg-o_en3b-WzMNrPBehJCYh_3QUD/view?usp=sharing"  target="_blank">Resume</a></li>-->
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
           </nav>
 
         </header>
 
         <main>
-          <section class="greeting">
-            <img src="img/portrait-mobile.png" class="mobile" alt="Portrait">
-            <img src="img/portrait.png" class="desktop" alt="Portrait">
-              <div class="hey">
-                <p><strong>Hey, I'm John</strong> a UX Generalist with a background in fine jewelry looking for a place to contribute and grow. Process oriented problem solver, and Figma based designer comfortable researching or prototyping.</p>
-              </div>
+          <section class="hero">
+              <img src="img/suithero.png" alt="hero image">
+            <div class="hey">
+              <h3>Hey, I'm John</h3>
+              <p>I craft compelling products and memorable experiences for people.</p>
+            </div>
           </section>
 
-          <article class="selected-work">
-            <a id="work"><h1>Selected Works</h1></a>
-              <section class="container">
+          <section class="uxwork">
 
-              <div class="mine">
-                <h2>Mine</h2>
-                <p>A research-backed, minimal cloud storage solution that prioritizes organization with a novel UI and dashboard layout.</p>
-                <a href="mine.html">
-                  <img src="img/mine/desktop_dashboard.png" alt="Mine Case Study">
-                  <div class="work-button">
-                    View Case Study
+            <a id="work"><h2>UX Design</h2></a>
+
+              <article class="container">
+
+                <div class="loupe">
+                  <a href="loupe.html">
+                    <img src="img/loupe-study.png" alt="loupe casestudy">
+                  </a>
+                  <div class="description">
+                    <h3>Loupe</h3>
+                    <p>A jewelry inspection app design</p>
                   </div>
-                </a>
-              </div>
+                </div>
 
-<!--
-              <div class="bus">
-                <h3>Busy Bus</h3>
-                <p>A bus stop tracking app that solved the problem of riders not knowing when their bus was arriving at a particular stop.</p>
-                <a href="busybus.html">
-                <img src="img/busybus.png" alt="Busybus Case Study">
-                  <div class="work-button">
-                    <a href="busybus.html">View Case Study</a>
+                  <div class="mine">
+                    <a href="mine.html">
+                      <img src="img/mine-study.png" alt="mine casestudy">
+                    </a>
+                  <div class="description">
+                    <h3>Mine</h3>
+                    <p>A minimal cloud storage design</p>
                   </div>
-                </a>
-              </div>
-
--->
-    </section>
           </article>
-        </main>
+        </section>
 
-        <footer>
-          <nav class="footer">
-            <p> ©2020 Designed and Developed by John Moriarty</P>
-            <ul>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="https://github.com/jmoriarty721"  target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/johnmoriarty-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </nav>
-        </footer>
+        <section class="bio">
+        <img src="img/portrait.png" alt="John Moriarty">
+        <p>A drive to create has led to a life of art and design. My previous professional work has been in fine jewelry and visual design, where I design and fabricate pieces of jewelry, as well as graphic design and merchandise for music labels. Seeking a new challenge and career change, I completed a 14 month UX apprenticeship that gave me the tools to leverage my past design experience into valuable technical solutions. I am particularly interested in user research and testing, though I strive to remain a competent generalist in all aspects of the design process.</p>
+        </section>
+
+    </main>
+
+    <footer>
+      <nav class="footer">
+        <div class="license">
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/johnmoriarty-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/jmoriarty721"  target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+
+        <p>Designed and Developed by John Moriarty 2020</P>
+
+        <a href="index.html"><img src="img/loupe/logo-footer.png" alt="logo"></a>
+      </nav>
+    </footer>
 
         <!-- Jquery follwed by your custom javascript. Uncomment jQuery only if needed! -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
