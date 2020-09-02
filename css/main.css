@@ -419,7 +419,7 @@ flex-direction: row;
 
 @media ( min-width: 700px) {
 .name{
-  margin-bottom: 10%;
+  margin-bottom: 17%;
 }
 }
 
@@ -1220,21 +1220,10 @@ flex-wrap: wrap;
 /*tablet*/
 @media ( min-width: 700px) {
 .loupepersonatraits img{
-  width: 50%;
+  align-self: center;
   margin:0;
-  padding-top:5%;
-  padding-bottom:5%;
-
-}
-}
-
-@media ( min-width: 800px) {
-.loupepersonatraits img{
-  margin:0;
-  padding-top:5%;
-  padding-bottom:5%;
-  max-width: 306px;
-  height: auto;
+  width: 25%;
+  height: 100%;
 }
 }
 
@@ -2338,19 +2327,10 @@ justify-content: center;
    About page classes
 ========================================================================== */
 
-/*"Quick Story.."*/
-.desktop-text h2{
-text-decoration: none;
-display: flex;
-margin:0;
-padding-top: 10%;
-}
 
 /*overall content frame*/
 .about-frame {
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
   }
 
 @media ( min-width: 800px) {
@@ -2421,6 +2401,8 @@ width: 45%;
 .about-frame p {
   align-items: center;
   padding-top: 3%;
+  text-indent: 40px;
+  font-size: 18px;
 }
 }
 
