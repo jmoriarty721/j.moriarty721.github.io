@@ -664,6 +664,20 @@ font-size: 22px;
   width: 100%;
 }
 
+@media ( min-width: 320px) {
+.container p{
+  font-size: 14px;
+  line-height: 0;
+}
+}
+
+@media ( min-width: 375px) {
+.container p{
+  font-size: 18px;
+  line-height: normal;
+}
+}
+
 /* loupe case study*/
 .loupe{
   position: relative;
@@ -2384,15 +2398,16 @@ width: 45%;
 }
 
 /*body text box*/
-@media ( min-width: 1000px) {
+@media ( min-width: 300px) {
 .desktop-text {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
   }
 }
 
 /*body text styling*/
 .about-frame p {
+  text-indent: 40px;
   text-align: left;
   line-height: 150%;
 }
@@ -2401,7 +2416,6 @@ width: 45%;
 .about-frame p {
   align-items: center;
   padding-top: 3%;
-  text-indent: 40px;
   font-size: 18px;
 }
 }
@@ -2492,14 +2506,131 @@ display: none;
    Contact styling
    ========================================================================== */
 
-   .contact-header {
-     text-decoration: none;
+/*overall box containing image and text*/
+   .overall-contact-frame{
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 2rem;
+     margin-bottom: 3rem;
+   }
+
+/*image*/
+@media ( min-width: 300px) {
+   .contact-collage{
+     width: 100%;
+     height:100%;
+   }
+ }
+
+@media ( min-width: 700px) {
+   .contact-collage{
+     width: 50%;
+     height:100%;
+   }
+ }
+
+/*box for text*/
+   .contact-info{
      margin-left: auto;
      margin-right: auto;
      display: flex;
      justify-content: center;
-     }
+     flex-direction: column;
+     text-align: center;
+   }
 
+/*"want to connect"*/
+   .contact-header {
+      text-decoration: none;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      }
+
+/*button for email*/
+#email {
+  text-decoration: none;
+  background-color: white;
+  border-style: none;
+  border-color: white;
+  padding: 1rem;
+  font-family: "Mulish";
+  font-size: 22px;
+  border-radius: 50px;
+  color:#0F2A6E;
+
+  transition: all 0.3s;
+  position: relative;
+}
+
+#email:focus {
+  outline: 0;
+}
+
+ #email span {
+	transition: all 0.3s;
+}
+
+#email::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(230,230,250, .75);
+	border-bottom-color: rgba(230,230,250, 0.75);
+	transform: scale(0.1, 1);
+  border-radius: 50px;
+}
+
+#email:hover span {
+	letter-spacing: 2px;
+}
+
+#email:hover::before {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+#email::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(230,230,250,0.1);
+}
+
+#email:hover::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+}
+
+.outside-contact{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.fab{
+  font-size: 28px;
+}
+
+  /*
 .contact-box{
   display: flex;
   background-color: rgba(55, 120, 195, 1);
@@ -2573,7 +2704,7 @@ form {
 .contact-button:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+*/
 
 /* ==========================================================================
    Helper classes (optional)
