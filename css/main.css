@@ -230,6 +230,57 @@ display: flex;
   }
 }
 
+/* font awesome icon styles */
+
+.fab{
+  font-size: 28px;
+  color: #0F2A6E;
+}
+
+/* font awesome icon hover push affect */
+@-webkit-keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+@keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+.hvr-icon-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-push .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-push:hover .hvr-icon, .hvr-icon-push:focus .hvr-icon, .hvr-icon-push:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-push;
+  animation-name: hvr-icon-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
 /* ============================================ footer */
 /*overall footer box*/
 @media ( min-width: 300px) {
@@ -323,6 +374,24 @@ flex-direction: row;
 }
 }
 
+/*affect for "Get in Touch" button*/
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* simple case study "return to top" hover
 #myBtn {
   display: flex;
   position: relative;
@@ -337,7 +406,7 @@ flex-direction: row;
   border-style: double;
   width: 280px;
   padding:2%;
-  font-size: 18px; /* Increase font size */
+  font-size: 18px;
   color:  #0F2A6E;
   margin-left: auto;
   margin-right: auto;
@@ -350,7 +419,68 @@ flex-direction: row;
   color: white;
   font-weight: 500;
 }
+*/
 
+/*sweep to top hover affect for case study "return to top" button*/
+#myBtn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: "Mulish";
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  border-color: #0F2A6E;
+  border-style: double;
+  width: 280px;
+  padding:2%;
+  font-size: 18px;
+  color:  #0F2A6E;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#myBtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  #0F2A6E ;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 17px;
+
+}
+#myBtn:hover, #myBtn:focus, #myBtn:active {
+  color: white;
+}
+#myBtn:hover:before, #myBtn:focus:before, #myBtn:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
 
 /*overall case study content box*/
 .casestudy{
@@ -2586,11 +2716,6 @@ display: none;
   text-decoration: none;
   list-style-type: none;
   justify-content: space-evenly;
-}
-
-.fab{
-  font-size: 28px;
-  color: #0F2A6E;
 }
 
 .other-links{
