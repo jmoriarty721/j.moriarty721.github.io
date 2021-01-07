@@ -642,17 +642,30 @@ flex-direction: row;
 }
 }
 
+.case-nav{
+  padding-bottom: 8%;
+}
+
 .case-nav a{
-font-family: "Mulish";
-color: #0F2A6E;
-align-content: center;
-justify-content: space-between;
-padding: 3%;
-font-size: 37px;
+  font-family: "Mulish";
+  color: #0F2A6E;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2%;
+  font-size: 37px;
+  display: inline-flex;
 }
 
 .case-nav h3{
 font-size: 22px;
+  width: 200px;
+  text-align: center;
+}
+
+.arrows{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* ==========================================================================
@@ -718,7 +731,7 @@ font-size: 22px;
 }
 
 /*overall UX work box*/
-.uxwork {
+.homeheader {
   box-sizing: border-box;
   display: block;
   margin-top: 5%;
@@ -747,7 +760,7 @@ font-size: 22px;
 }
 }
 
-.container img{
+.uxwork img{
   display: flex;
   width: 100%;
 }
@@ -787,6 +800,36 @@ line-height: 1.2rem;
 padding-left: 15%;
 }
 
+/* Graphic Design */
+@media ( min-width: 300px) {
+.graphicdesign img{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  display: flex;
+}
+
+@media ( min-width: 700px) {
+.graphicdesign img{
+  display: flex;
+  width: 90%;
+}
+}
+
+@media ( min-width: 300px) {
+.viewmore {
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media ( min-width: 700px) {
+.viewmore {
+  justify-content: flex-end;
+  align-items: center;
+}
+}
 /* bio box */
 @media ( min-width: 300px) {
 .bio{
@@ -2425,6 +2468,246 @@ justify-content: center;
 .conclusion{
 }
 
+
+/* ==========================================================================
+   "Memorex" Case study page classes
+========================================================================== */
+
+@media ( min-width: 300px) {
+.graphic_intro{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_intro{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5%;
+}
+}
+
+.graphic_writing{
+  text-align: center;
+  margin-right: 3%;
+}
+
+@media ( min-width: 300px) {
+.graphic_intro img{
+  width:100%;
+margin-left: auto;
+margin-right: auto;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_intro img{
+  width:50%;
+}
+}
+
+.bandcamp{
+  display: flex;
+  padding-left: 5%;
+}
+
+.graphic_middle{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.graphic_middle_frame{
+  text-align: center;
+}
+
+.graphic_middle img{
+  width:80%;
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5%
+}
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom_writing{
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom_writing{
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom_pics {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom_pics {
+display: flex;
+justify-content: space-evenly;
+padding-top: 1%;
+padding-bottom: 1%;
+flex-wrap: nowrap;
+}
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom_pics img{
+  width: 45%;
+    display: flex;
+    padding: inherit;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom_pics img{
+  width:23%;
+  padding:0;
+}
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom_side{
+margin-left: 0;
+margin-right: 0;
+padding-top: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+}
+
+@media ( min-width: 300px) {
+.graphic_bottom_side img{
+  width:100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+}
+
+@media ( min-width: 700px) {
+.graphic_bottom_side img{
+  width:276px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+}
+
+@media ( min-width: 300px) {
+.player_small{
+  display: block;
+}
+}
+
+@media ( min-width: 700px) {
+.player_small{
+  display: none;
+}
+}
+
+@media ( min-width: 300px) {
+.player_big{
+  display: none;
+}
+}
+
+@media ( min-width: 700px) {
+.player_big{
+  display: block;
+}
+}
+
+
+/* ===========================
+   Yu Utsu specific page
+========================== */
+
+@media ( min-width: 300px) {
+.yu_writing{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+}
+
+@media ( min-width: 700px) {
+.yu_writing{
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+}
+
+.yu_writing p{
+padding-right: 5%
+}
+
+.yu_social {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+
+.social_grabs{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.social_grabs img{
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.yu_head {
+  width: 35%;
+  align-items: flex-end;
+  margin-right: -5%;
+}
 
 /* ==========================================================================
    About page classes
