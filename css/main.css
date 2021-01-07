@@ -748,6 +748,7 @@ font-size: 22px;
   justify-content: space-evenly;
   position: relative;
   flex-wrap: wrap;
+  padding-bottom: 10%;
 }
 }
 
@@ -757,6 +758,8 @@ font-size: 22px;
   justify-content: space-evenly;
   position: relative;
   flex-wrap: nowrap;
+  padding-bottom: 4%;
+
 }
 }
 
