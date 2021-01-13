@@ -662,10 +662,20 @@ font-size: 22px;
   text-align: center;
 }
 
+@media ( min-width: 300px) {
 .arrows{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 10%;
+}
+}
+
+@media ( min-width: 700px) {
+.arrows{
+  padding-top: 5%;
+
+}
 }
 
 /* ==========================================================================
@@ -2918,12 +2928,19 @@ display: none;
    ========================================================================== */
 
 /*overall box containing image and text*/
+@media ( min-width: 300px) {
    .overall-contact-frame{
      display: flex;
      flex-wrap: wrap;
-     margin-top: 2rem;
      margin-bottom: 3rem;
    }
+ }
+
+ @media ( min-width: 700px) {
+    .overall-contact-frame{
+     margin-top: 2rem;
+   }
+ }
 
 /*image*/
 @media ( min-width: 300px) {

@@ -7,13 +7,15 @@ function topFunction() {
 
 //for contact page
 
-
 var button = document.getElementById("email");
 button.addEventListener('click', function() {
   if (button.getAttribute("data-text-swap") == button.innerHTML) {
     button.innerHTML = button.getAttribute("data-text-original");
-  } else {
+  }
+  else {
     button.setAttribute("data-text-original", button.innerHTML);
     button.innerHTML = button.getAttribute("data-text-swap");
   }
-}, false);
+},
+
+false);
