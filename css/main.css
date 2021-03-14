@@ -1,6 +1,12 @@
 /* ==========================================================================
    Universal styles
 ========================================================================== */
+@font-face {
+font-family: 'wide latin';
+font-style: normal;
+font-weight: normal;
+src: local('Wide Latin'), url('LATINWD.woff') format('woff');
+}
 
 @media ( min-width: 300px) {
 main{
@@ -872,9 +878,12 @@ padding-left: 15%;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 50%;
+  border-color: #0F2A6E;
   padding:1%;
-
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
 }
 }
 
@@ -1158,6 +1167,7 @@ padding-bottom: 5%;
 @media ( min-width: 300px) {
 .workgriditem img{
 width:95%;
+height:100%;
 }
 }
 
