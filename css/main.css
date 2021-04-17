@@ -1109,16 +1109,21 @@ margin-right: auto;
 
 @media ( min-width: 700px) {
 .blurb-column{
+  flex-direction: column;
   text-align: center;
   vertical-align: top;
   padding-left: 3%;
   padding-right: 3%;
+  display: flex;
+  justify-content: space-between;
 }
 }
 
 @media ( min-width: 700px) {
 .blurb-column img{
-width:auto;
+  margin: auto;
+  padding-bottom: 5%;
+}
 }
 }
 
